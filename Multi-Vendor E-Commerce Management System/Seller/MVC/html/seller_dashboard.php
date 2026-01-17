@@ -120,3 +120,24 @@
                             </td>
                         </tr>
                         <tr>
+                            
+                            <td>#ORD-002</td>
+                            <td>Jane Smith</td>
+                            <td>Smart Watch</td>
+                            <td>1</td>
+                            <td>$199.99</td>
+                            <td><span class="status-badge status-shipped">Shipped</span></td>
+                            <td>
+                                <button class="action-btn view-btn">View</button>
+                                <button class="action-btn edit-btn">Update</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#ORD-003</td>
+                            <td>Mike Johnson</td>
+                            <td>Laptop Stand</td>
+                            <td>3</td>
+                            <td>$104.97</td>
+                            <td><span class="status-badge status-delivered">Delivered</span></td>
+                            <td>
+
