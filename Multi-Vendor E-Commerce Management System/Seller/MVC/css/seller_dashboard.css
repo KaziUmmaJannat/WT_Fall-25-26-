@@ -277,6 +277,15 @@ tbody tr:hover {
     font-size: 14px;
 }
 
+.modal-footer {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+
+
 
 
 
