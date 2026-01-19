@@ -211,13 +211,14 @@ $profile = $profile_result ? mysqli_fetch_assoc($profile_result) : [];
                         else {
                             echo '<tr><td colspan="6" style="text-align: center; padding: 30px;">No products added yet</td></tr>';
                         }
-                        ?>
+                    ?>
                 </tbody>
-                </table>
+            </table>
             </div>
- <h2 style="margin-top: 40px;">Recent Orders</h2>
-            <div class="table-container">
-                <table>
+                   <h2 style="margin-top: 40px;">Recent Orders</h2>
+                       <div class="table-container">
+
+                    <table>
                     <thead>
                         <tr>
                             <th>Order ID</th>
@@ -229,6 +230,7 @@ $profile = $profile_result ? mysqli_fetch_assoc($profile_result) : [];
                             <th>Actions</th>
                         </tr>
                     </thead>
+
                     <tbody>
                         <tr>
                             <td>#ORD-001</td>
@@ -242,6 +244,7 @@ $profile = $profile_result ? mysqli_fetch_assoc($profile_result) : [];
                                 <button class="action-btn edit-btn">Update</button>
                             </td>
                         </tr>
+                        
                         <tr>
                             
                             <td>#ORD-002</td>
