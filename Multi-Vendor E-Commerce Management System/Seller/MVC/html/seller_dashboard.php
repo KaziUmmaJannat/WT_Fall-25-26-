@@ -218,6 +218,22 @@
                     <label>Price:</label><br>
                     <input type="number" name="price" placeholder="Enter price" step="0.01" required style="width: 100%; padding: 8px; margin-top: 5px;">
                 </div>
+                    
+                                               <div style="text-align: right;">
+                    <a href="seller_dashboard.php" style="margin-right: 10px; text-decoration: none; color: #666;">Cancel</a>
+                    <button type="submit" name="add_product" style="background: #007bff; color: white; padding: 8px 16px; border: none; border-radius: 4px;">Add Product</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <?php endif; ?>
+</body>
+</html>
+
+<?php
+mysqli_close($conn);
+?>
+
 
 
 
