@@ -198,11 +198,17 @@
         </div>
     </div>
     <?php endif; ?>
-    
+
     <?php if ($show_add_form): ?>
     <!-- Add Product Form -->
     <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000;">
         <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border-radius: 8px; width: 400px;">
+            <h2>Add New Product</h2>
+            <form method="POST">
+                <div style="margin-bottom: 15px;">
+                    <label>Product Name:</label><br>
+                    <input type="text" name="product_name" placeholder="Enter product name" required style="width: 100%; padding: 8px; margin-top: 5px;">
+                </div>
 
 
 
