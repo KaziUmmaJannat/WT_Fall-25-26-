@@ -257,7 +257,7 @@ $profile = $profile_result ? mysqli_fetch_assoc($profile_result) : [];
                                 <button class="action-btn edit-btn">Update</button>
                             </td>
                         </tr>
-                        
+
                         <tr>
                             <td>#ORD-003</td>
                             <td>Mike Johnson</td>
@@ -273,9 +273,9 @@ $profile = $profile_result ? mysqli_fetch_assoc($profile_result) : [];
                     </tbody>
                 </table>
             </div>
-        </div>
     </div>
-     <?php if ($show_profile_form): ?>
+
+    <?php if ($show_profile_form): ?>
     <!-- Profile Form -->
     <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000;">
         <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border-radius: 8px; width: 400px;">
@@ -296,6 +296,7 @@ $profile = $profile_result ? mysqli_fetch_assoc($profile_result) : [];
             </form>
         </div>
     </div>
+
     <?php endif; ?>
     <?php if ($show_edit_form && $edit_product): ?>
     <!-- Edit Product Form -->
@@ -340,32 +341,26 @@ $profile = $profile_result ? mysqli_fetch_assoc($profile_result) : [];
                     <input type="text" name="category" placeholder="Enter category" required style="width: 100%; padding: 8px; margin-top: 5px;">
                 </div>
                     
-                                <div style="margin-bottom: 15px;">
+                <div style="margin-bottom: 15px;">
                     <label>Price:</label><br>
                     <input type="number" name="price" placeholder="Enter price" step="0.01" required style="width: 100%; padding: 8px; margin-top: 5px;">
                 </div>
                     
-                                               <div style="text-align: right;">
+                <div style="text-align: right;">
                     <a href="seller_dashboard.php" style="margin-right: 10px; text-decoration: none; color: #666;">Cancel</a>
                     <button type="submit" name="add_product" style="background: #007bff; color: white; padding: 8px 16px; border: none; border-radius: 4px;">Add Product</button>
                 </div>
             </form>
         </div>
     </div>
-    <?php endif; ?>
+
+<?php endif; ?>
 </body>
 </html>
 
 <?php
 mysqli_close($conn);
 ?>
-
-
-
-
-
-
-
 
 
 
