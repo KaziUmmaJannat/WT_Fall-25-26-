@@ -188,8 +188,9 @@ $profile = $profile_result ? mysqli_fetch_assoc($profile_result) : [];
                         <th>Actions</th>
                     </tr>
                 </thead>
+
                 <tbody>
-                        <?php 
+                    <?php 
                         if (mysqli_num_rows($result) > 0) {
                             while ($row = mysqli_fetch_assoc($result)) { 
                                 $formatted_id = str_pad($row['id'], 3, '0', STR_PAD_LEFT);
@@ -205,11 +206,13 @@ $profile = $profile_result ? mysqli_fetch_assoc($profile_result) : [];
                                 echo '</td>';
                                 echo '</tr>';
                             }
-                        } else {
+                        } 
+                        
+                        else {
                             echo '<tr><td colspan="6" style="text-align: center; padding: 30px;">No products added yet</td></tr>';
                         }
                         ?>
-                    </tbody>
+                </tbody>
                 </table>
             </div>
  <h2 style="margin-top: 40px;">Recent Orders</h2>
