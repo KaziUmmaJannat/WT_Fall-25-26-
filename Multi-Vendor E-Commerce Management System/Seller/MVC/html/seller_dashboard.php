@@ -1,3 +1,21 @@
+<?php
+session_start();
+
+// Check if user is logged in
+// if (!isset($_SESSION['username'])) {
+//     header("Location: login.php");
+//     exit();
+// }
+
+// Database connection
+include '../db/db.php';
+
+$success = $error = "";
+$seller_id = 1; // Default seller_id
+$show_add_form = isset($_GET['add_product']);
+$show_edit_form = isset($_GET['edit_id']);
+$show_profile_form = isset($_GET['profile']);
+$edit_product = null;
 
 
 <!DOCTYPE html>
