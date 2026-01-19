@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 
@@ -358,18 +359,3 @@ $profile = $profile_result ? mysqli_fetch_assoc($profile_result) : [];
 <?php
 mysqli_close($conn);
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
