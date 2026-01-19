@@ -209,6 +209,12 @@
                     <label>Product Name:</label><br>
                     <input type="text" name="product_name" placeholder="Enter product name" required style="width: 100%; padding: 8px; margin-top: 5px;">
                 </div>
+                <div style="margin-bottom: 15px;">
+                    <label>Category:</label><br>
+                    <input type="text" name="category" placeholder="Enter category" required style="width: 100%; padding: 8px; margin-top: 5px;">
+                </div>
+                
+
 
 
 
